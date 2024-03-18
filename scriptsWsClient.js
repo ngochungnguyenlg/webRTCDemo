@@ -2,7 +2,7 @@ const userName = "Client-"+Math.floor(Math.random() * 100000)
 const password = "x";
 document.querySelector('#user-name').innerHTML = userName;
 
-const ws = new WebSocket('ws://192.168.55.106:8282');
+const ws = new WebSocket('ws://192.168.2.4:8282');
 
 const remoteVideoEl = document.querySelector('#show-video');
 

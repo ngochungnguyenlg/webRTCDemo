@@ -18,25 +18,25 @@ To handle the supportive server, we design a local websocket server listens on p
 <img src="flowchart/serverUseCases.png" alt="Server events" width="700" height="450">
 
 # UI
-1. host:
+1. Host:
 <img src="flowchart/host_ui.jpg" alt="Host UI" width="700" height="450">
-2. client:
+2. Client:
 <img src="flowchart/client_ui.jpg" alt="Client UI" width="700" height="450">
 
 # How to use
-1. install envs:
+1. Install envs:
 This code was test on Nodejs v20.11.1
 
 2. Run local server
 npm run start
 
-3. change address of host and client
+3. Change address of host and client
 const ws = new WebSocket('ws://[your ip address]:8282');
 example: const ws = new WebSocket('ws://192.168.55.106:8282');
 
-4. Opend host on: http://[your ip address]:8282/index.html
+4. Open host on: http://[your ip address]:8282/index.html
 
-5. Opend client on: http://[your ip address]:8282/indexs.html
+5. Open client on: http://[your ip address]:8282/indexs.html
 
 
 
