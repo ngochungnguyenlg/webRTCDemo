@@ -1,0 +1,64 @@
+<mxfile host="Electron" modified="2024-03-18T06:37:16.170Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="hFnh35Su6jbjfinWoR1M" version="24.0.4" type="device">
+  <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
+    <mxGraphModel dx="954" dy="624" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-11" value="Client user usecases (peer B)" style="swimlane;html=1;startSize=20;horizontal=1;containerType=tree;glass=0;" parent="1" vertex="1">
+          <mxGeometry x="84" y="70" width="660" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="y6h-mKg5Q5mGYMtxv3kg-7" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
+          <mxGeometry x="190" y="160" width="160" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="y6h-mKg5Q5mGYMtxv3kg-10" value="createPeerConnection&lt;div&gt;()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
+          <mxGeometry x="210" y="185" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="y6h-mKg5Q5mGYMtxv3kg-12" value="createoffer(),&amp;nbsp;&lt;br&gt;setLocalDescription()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
+          <mxGeometry x="210" y="292.5" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OiZnXtct43Ue3zYjEDN8-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="OiZnXtct43Ue3zYjEDN8-8" target="OiZnXtct43Ue3zYjEDN8-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OiZnXtct43Ue3zYjEDN8-8" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Listen to signal &quot;&lt;span style=&quot;color: rgb(8, 28, 54); font-family: SegoeuiPc, &amp;quot;Segoe UI&amp;quot;, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, &amp;quot;Lucida Grande&amp;quot;, Roboto, Ubuntu, Tahoma, &amp;quot;Microsoft Sans Serif&amp;quot;, Arial, sans-serif; letter-spacing: 0.2px; text-align: start; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;availableOffers&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;&lt;br&gt;and &quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(8, 28, 54); font-family: SegoeuiPc, &amp;quot;Segoe UI&amp;quot;, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, &amp;quot;Lucida Grande&amp;quot;, Roboto, Ubuntu, Tahoma, &amp;quot;Microsoft Sans Serif&amp;quot;, Arial, sans-serif; letter-spacing: 0.2px; text-align: start; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;newOfferAwaiting&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+          <mxGeometry x="20" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y6h-mKg5Q5mGYMtxv3kg-6" value="click" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-11" source="OiZnXtct43Ue3zYjEDN8-9" target="y6h-mKg5Q5mGYMtxv3kg-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OiZnXtct43Ue3zYjEDN8-9" value="Create a new answer button, wait for event click" style="rounded=0;whiteSpace=wrap;html=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+          <mxGeometry x="20" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y6h-mKg5Q5mGYMtxv3kg-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-11" source="y6h-mKg5Q5mGYMtxv3kg-5" target="y6h-mKg5Q5mGYMtxv3kg-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y6h-mKg5Q5mGYMtxv3kg-5" value="answerOffer()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
+          <mxGeometry x="210" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y6h-mKg5Q5mGYMtxv3kg-15" value="add remote stream" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
+          <mxGeometry x="210" y="240" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="y6h-mKg5Q5mGYMtxv3kg-17" value="send ICECandidate" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
+          <mxGeometry x="210" y="350" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="y6h-mKg5Q5mGYMtxv3kg-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-11" source="y6h-mKg5Q5mGYMtxv3kg-18" target="y6h-mKg5Q5mGYMtxv3kg-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y6h-mKg5Q5mGYMtxv3kg-18" value="send event &quot;newAnswer&quot; to server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
+          <mxGeometry x="376" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y6h-mKg5Q5mGYMtxv3kg-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-11" source="y6h-mKg5Q5mGYMtxv3kg-20" target="y6h-mKg5Q5mGYMtxv3kg-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y6h-mKg5Q5mGYMtxv3kg-20" value="Listen to event &quot;ack&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
+          <mxGeometry x="536" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y6h-mKg5Q5mGYMtxv3kg-22" value="&lt;span style=&quot;color: rgb(8, 28, 54); font-family: SegoeuiPc, &amp;quot;Segoe UI&amp;quot;, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, &amp;quot;Lucida Grande&amp;quot;, Roboto, Ubuntu, Tahoma, &amp;quot;Microsoft Sans Serif&amp;quot;, Arial, sans-serif; letter-spacing: 0.2px; text-align: start; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;updateICECandiate()&lt;br/&gt;(run API addICECandidate())&lt;/font&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
+          <mxGeometry x="536" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y6h-mKg5Q5mGYMtxv3kg-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-11" source="y6h-mKg5Q5mGYMtxv3kg-7" target="y6h-mKg5Q5mGYMtxv3kg-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

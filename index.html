@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Webrtc demo host</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+<body>
+    <div class="container">
+        <div id="user-name"></div>
+        <div class="row">
+            <input class="col-12 justify-content-md-center video-src" type="text" placeholder="Please input a shared link from youtuble ..."
+            id="video-src" name="video-src" onkeyup="onVideoSrcChange(this.value)">
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div> Share content</div>
+                <div class="row">
+                    <video class="video-player preview-video" id="remote-video" autoplay playsinline controls muted></video>
+                </div>
+                <!-- <div class="row">
+                    <video class="video-player preview-video" id="remote-video_" autoplay playsinline controls></video>
+                </div> -->
+                <div class="dropdown" >
+                    <button class="btn btn-secondary dropdown-toggle" id ="btn-dwn" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
+                      Select shared devices
+                    </button>
+                    <ul class="dropdown-menu overflow-auto form-check" id ="btn-dwn_">
+                    </ul>
+                </div>
+                <div id="button-list" class="row ">
+                    <div class="col-4 button" id = "shareSrc"><img class="icon" src="./img/sharescreen.png" alt=""></div>
+                    <div class="col-4 button"><img class="icon" src="./img/microphone.png" alt=""></div>
+                </div>
+                <div id="selectSource" class="dropdown"></div>
+            </div>
+            <div class="col-9" id="videoSrc">
+                <!-- <iframe class="video-player" id="show-video" src="https://www.youtube.com/embed/kS9D909oE0Q" autoplay="" playsinline="" controls=""></iframe> -->
+                <!-- <video class="video-player-cln" id="show-video" autoplay playsinline controls></video> -->
+                Source video
+                <video id="show-video" class="video-player-cln" autoplay playsinline controls>
+                    <!-- NB CORS: https://bugzilla.mozilla.org/show_bug.cgi?id=1177793 -->
+                    <!-- <source src="./video/chrome.webm" type="video/webm"/> -->
+                    <source src="./video/Avengers_5.mp4" type="video/mp4"/>
+                    <p>This browser does not support the video element.</p>
+                </video>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+<!-- <script src="socket.io.js"></script> -->
+<script src="index.js"></script>
+<script src='scriptsWsHost.js'></script>
+<script src='socketListeners.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</html>

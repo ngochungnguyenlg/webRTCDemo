@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WebRTC demo client</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+<body>
+    <div class="container">
+        <div id="user-name"></div>
+        <div class="row">
+            <div class="col-9" id="videoSrc">
+                <!-- <iframe class="video-player-s" id="show-video" src="https://www.youtube.com/embed/kS9D909oE0Q" autoplay="" playsinline="" controls=""></iframe> -->
+                <video class="video-player-cln" id="show-video" autoplay playsinline controls></video>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='scriptsWsClient.js'></script>
+<script src='socketListeners.js'></script>
+</html>
