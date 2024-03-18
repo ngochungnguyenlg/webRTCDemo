@@ -1,24 +1,27 @@
 # webRTCDemo
 Given two devices, A and B, for enabling the sharing of streaming video from device A to device B. Let A be the host user who will share its video with client device B.
-To solve this problem, we use WebRTC combined with WebSocket as the key to this implementation. ![systematic of wertc](flowchart/WebRTC_system_design.png){width=100px}
+To solve this problem, we use WebRTC combined with WebSocket as the key to this implementation.
+<img src="flowchart/WebRTC_system_design.png" alt="systematic of WebRTC" width="100" height="75">
+
 As shown in figure systematic of wertc, we define the steps of connectivity and streaming as belows:
 1. Hosts and clients connect to the WebSocket server.
 2. The host sends an offer to share streaming data with clients via the WebSocket server.
 3. The WebSocket server notifies all connected clients of available offers.
 4. Subsequently, when a client accepts to display streaming data, it sends an answer offer to the WebSocket server to establish a peer-to-peer connection and begins displaying the streaming data.
 
-![Sequence](flowchart/WebRTCsequency.png){width=100px}
+<img src="flowchart/WebRTCsequency.png" alt="Sequence" width="100" height="75">
+
 
 # Server events:
 To handle the supportive server, we design a local websocket server listens on port 8282 with as below events:
 
-![Server events](flowchart/serverUseCases.png){width=100px}
+<img src="flowchart/serverUseCases.png" alt="Server events" width="100" height="75">
 
 # UI
 1. host:
-![Host UI](flowchart/host_ui.jpg){width=100px}
+<img src="flowchart/host_ui.png" alt="Host UI" width="100" height="75">
 2. client:
-![Client UI](flowchart/client_ui.jpg){width=100px}
+<img src="flowchart/client_ui.png" alt="Client UI" width="100" height="75">
 
 # How to use
 1. install envs:
