@@ -31,12 +31,12 @@ This code was test on Nodejs v20.11.1
 npm run start
 
 3. change address of host and client
-const ws = new WebSocket('ws://your ip address:8282');
+const ws = new WebSocket('ws://[your ip address]:8282');
 example: const ws = new WebSocket('ws://192.168.55.106:8282');
 
-4. Opend host on: http://your ip address:8282/index.html
+4. Opend host on: http://[your ip address]:8282/index.html
 
-5. Opend client on: http://your ip address:8282/indexs.html
+5. Opend client on: http://[your ip address]:8282/indexs.html
 
 
 
