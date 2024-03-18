@@ -19,9 +19,9 @@ To handle the supportive server, we design a local websocket server listens on p
 
 # UI
 1. host:
-<img src="flowchart/host_ui.png" alt="Host UI" width="500" height="375">
+<img src="flowchart/host_ui.jpg" alt="Host UI" width="500" height="375">
 2. client:
-<img src="flowchart/client_ui.png" alt="Client UI" width="500" height="375">
+<img src="flowchart/client_ui.jpg" alt="Client UI" width="500" height="375">
 
 # How to use
 1. install envs:
