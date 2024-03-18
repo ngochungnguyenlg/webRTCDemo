@@ -5,7 +5,7 @@ document.querySelector('#user-name').innerHTML = userName;
 const ws = new WebSocket('ws://192.168.55.106:8282');
 
 const localVideoEl = document.querySelector('#remote-video');
-const localCurVideo = document.querySelector('#videoSrc');
+const localCurVideo = document.querySelector('#show-video');
 
 let localStream; //a var to hold the local video stream
 let remoteStream; //a var to hold the remote video stream
