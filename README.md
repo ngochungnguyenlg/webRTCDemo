@@ -9,19 +9,19 @@ As shown in figure systematic of wertc, we define the steps of connectivity and 
 3. The WebSocket server notifies all connected clients of available offers.
 4. Subsequently, when a client accepts to display streaming data, it sends an answer offer to the WebSocket server to establish a peer-to-peer connection and begins displaying the streaming data.
 
-<img src="flowchart/WebRTCsequency.png" alt="Sequence" width="500" height="450">
+<img src="flowchart/WebRTCsequency.png" alt="Sequence" width="700" height="450">
 
 
 # Server events:
 To handle the supportive server, we design a local websocket server listens on port 8282 with as below events:
 
-<img src="flowchart/serverUseCases.png" alt="Server events" width="500" height="450">
+<img src="flowchart/serverUseCases.png" alt="Server events" width="700" height="450">
 
 # UI
 1. host:
-<img src="flowchart/host_ui.jpg" alt="Host UI" width="500" height="450">
+<img src="flowchart/host_ui.jpg" alt="Host UI" width="700" height="450">
 2. client:
-<img src="flowchart/client_ui.jpg" alt="Client UI" width="500" height="450">
+<img src="flowchart/client_ui.jpg" alt="Client UI" width="700" height="450">
 
 # How to use
 1. install envs:
